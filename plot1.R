@@ -4,9 +4,10 @@ if(!exists("filteredData")) {
 }
 
 ## initialize the file
-png(filename = "plot1.png")
+png(filename = "plot1.png", width=480, height=480)
 
 ## generate plot 1
+par(mfcol = c(1,1))
 hist(filteredData$Global_active_power, col = "red", main = "Global Active Power", xlab = "Global Active Power (kilowatts)")
 
 ## save the plot

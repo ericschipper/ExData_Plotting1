@@ -4,7 +4,7 @@ if(!exists("filteredData")) {
 }
 
 ## initialize the file
-png(filename = "plot4.png")
+png(filename = "plot4.png", width=480, height=480)
 
 ## generate plot 4
 par(mfcol = c(2,2))

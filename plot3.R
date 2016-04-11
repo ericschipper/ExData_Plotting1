@@ -4,9 +4,10 @@ if(!exists("filteredData")) {
 }
 
 ## initialize the file
-png(filename = "plot3.png")
+png(filename = "plot3.png", width=480, height=480)
 
 ## generate plot 3
+par(mfcol = c(1,1))
 plot.colors <- c("black","red","blue")
 plot(filteredData$Sub_metering_1~filteredData$dateTime,type = "l", main = "", xlab = "", ylab = "Energy sub metering", col = plot.colors[1])
 lines(filteredData$Sub_metering_2~filteredData$dateTime,type = "l", col = plot.colors[2])
